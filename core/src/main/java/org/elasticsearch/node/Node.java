@@ -271,7 +271,7 @@ public class Node implements Closeable {
             tmpSettings = addNodeNameIfNeeded(tmpSettings, nodeId);
             // this must be captured after the node name is possibly added to the settings
             final String nodeName = NODE_NAME_SETTING.get(tmpSettings);
-            if (hadPredefinedNodeName == false) {
+            if (!hadPredefinedNodeName) {
                 logger.info("node name [{}] derived from node ID [{}]; set [{}] to override", nodeName, nodeId, NODE_NAME_SETTING.getKey());
             } else {
                 logger.info("node name [{}], node ID [{}]", nodeName, nodeId);

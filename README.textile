@@ -2,4 +2,3 @@ elasticsearch6.1.2 本地编译版本
 
 gradle版本：4.4.0
 jdk版本：1.8
-
